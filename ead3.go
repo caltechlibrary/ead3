@@ -44,9 +44,10 @@ import "encoding/xml"
 
 // EAD3 document container
 type EAD3 struct {
-	XMLName  xml.Name  `xml:"ead" json:"-"`
-	Control  *Control  `xml:"control" json:"control"`
-	ArchDesc *ArchDesc `xml:"archdesc" json:"archdesc"`
+	XMLName      xml.Name  `xml:"ead" json:"-"`
+	XMLNameSpace string    `xml:"xmlns,attr" json:"-"`
+	Control      *Control  `xml:"control" json:"control"`
+	ArchDesc     *ArchDesc `xml:"archdesc" json:"archdesc"`
 }
 
 // P provides for unparsed embedded markup of paragraph elements
@@ -59,6 +60,8 @@ type P struct {
 type Control struct {
 	XMLName               xml.Name               `xml:"control" json:"-"`
 	RecordID              string                 `xml:"recordid" json:"record_id"`
+	OtherRecordID         *OtherRecordID         `xml:"otherrecordid,omitemtpy" json:"other_record_id,omitempty"`
+	Representation        *Representation        `xml:"representation,omitempty" json:"representation,omitempty"`
 	FileDesc              *FileDesc              `xml:"filedesc" json:"file_desc"`
 	MaintenanceStatus     *MaintenanceStatus     `xml:"maintenancestatus" json:"maintenance_status"`
 	MaintenanceAgency     *MaintenanceAgency     `xml:"maintenanceagency" json:"maintenance_agency"`
@@ -67,11 +70,26 @@ type Control struct {
 	MaintenanceHistory    *MaintenanceHistory    `xml:"maintenancehistory" json:"maintenance_history"`
 }
 
+type OtherRecordID struct {
+	XMLName   xml.Name `xml:"otherrecordid" json:"-"`
+	LocalType string   `xml:"localtype,attr,omitempty" json:"localtype,omitempty"`
+	Value     string   `xml:",chardata" json:"value"`
+}
+
+type Representation struct {
+	XMLName   xml.Name `xml:"representation" json:"-"`
+	HRef      string   `xml:"href,attr,omitempty" json:"href,omitempty"`
+	LocalType string   `xml:"localtype,attr,omitempty" json:"localtype,omitempty"`
+	Value     string   `xml:",chardata" json:"value"`
+}
+
 // FileDesc describes file system contents
 type FileDesc struct {
 	XMLName         xml.Name         `xml:"filedesc" json:"-"`
 	TitleStmt       *TitleStmt       `xml:"titlestmt" json:"title_stmt"`
-	PublicationStmt *PublicationStmt `xml:"publicationstmt" json:"publication_stmt"`
+	EditionStmt     *EditionStmt     `xml:"editionstmt,omitempty" json:"edition_stmt,omitempty"`
+	PublicationStmt *PublicationStmt `xml:"publicationstmt,omitempty" json:"publication_stmt,omitempty"`
+	NoteStmt        *NoteStmt        `xml:"notestmt,omitempty" json:"notestmt,omitempty"`
 }
 
 // TitleStmt provides structure relating to titling and authorship
@@ -80,6 +98,25 @@ type TitleStmt struct {
 	TitleProper string   `xml:"titleproper" json:"title_proper"`
 	Subtitle    string   `xml:"subtitle" json:"subtitle"`
 	Author      string   `xml:"author" json:"author"`
+}
+
+// EditionStmt provides information an about specific editions of work
+type EditionStmt struct {
+	XMLName xml.Name `xml:"editionstmt" json:"-"`
+	Edition string   `xml:"edition,omitempty" json:"edition,omitempty"`
+	P       []*P     `xml:"p" json:"p"`
+}
+
+// NoteStmt provides information an about a work
+type NoteStmt struct {
+	XMLName     xml.Name     `xml:"notestmt" json:"-"`
+	ControlNote *ControlNote `xml:"controlnote,omitempty" json:"controlnote,omitempty"`
+}
+
+// ControlNote provides specific about processing
+type ControlNote struct {
+	XMLName xml.Name `xml:"controlnote" json:"-"`
+	P       []*P     `xml:"p" json:"p"`
 }
 
 // PublicationStmt provides information on the publication nature of content
@@ -92,12 +129,14 @@ type PublicationStmt struct {
 type MaintenanceStatus struct {
 	XMLName xml.Name `xml:"maintenancestatus" json:"-"`
 	Value   string   `xml:"value,attr" json:"value"`
+	Text    string   `xml:",chardata" json:"text"`
 }
 
 // MaintenanceAgency provides content related organziation performing maintenance
 type MaintenanceAgency struct {
 	XMLName    xml.Name `xml:"maintenanceagency" json:"-"`
-	Agencyname string   `xml:"agencyname" json:"agency_name"`
+	AgencyCode string   `xml:"agencycode,omitempty" json:"agency_code,omitempty"`
+	AgencyName string   `xml:"agencyname,omitempty" json:"agency_name,omitempty"`
 }
 
 // ConventionDeclaration provides ciation declarations
@@ -124,6 +163,7 @@ type Language struct {
 type Script struct {
 	XMLName    xml.Name `xml:"script" json:"-"`
 	ScriptCode string   `xml:"scriptcode,attr" json:"script_code,omitempty"`
+	Value      string   `xml:",chardata" json:"value,omitempty"`
 }
 
 // MaintenanceHistory provides a collection of maintenance events
@@ -134,11 +174,18 @@ type MaintenanceHistory struct {
 
 // MaintenanceEvent describes activities related to processing content
 type MaintenanceEvent struct {
-	XMLName       xml.Name   `xml:"maintenanceevent" json:"-"`
-	EventType     *EventType `xml:"eventtype" json:"event_type"`
-	EventDateTime string     `xml:"eventdatetime" json:"event_datetime"`
-	AgentType     *AgentType `xml:"agenttype" json:"agent_type"`
-	Agent         string     `xml:"agent" json:"agent"`
+	XMLName       xml.Name       `xml:"maintenanceevent" json:"-"`
+	EventType     *EventType     `xml:"eventtype" json:"event_type"`
+	EventDateTime *EventDateTime `xml:"eventdatetime" json:"event_datetime"`
+	AgentType     *AgentType     `xml:"agenttype" json:"agent_type"`
+	Agent         string         `xml:"agent" json:"agent"`
+}
+
+// EventDateTime describes a date time of event
+type EventDateTime struct {
+	XMLName          xml.Name `xml:"eventdatetime" json:"-"`
+	StandardDateTime string   `xml:"standarddatetime,attr,omitempty" json:"standarddatetime,emitempty"`
+	Value            string   `xml:",chardata" json:"value"`
 }
 
 // EventType describes the type of maintenance event
@@ -190,7 +237,7 @@ type DID struct {
 	Origination        *Origination        `xml:"origination" json:"origination"`
 	UnitTitle          *UnitTitle          `xml:"unittitle" json:"unit_title"`
 	UnitDateStructured *UnitDateStructured `xml:"unitdatestructured,omitempty" json:"unit_date_structured,omitempty"`
-	UnitDates          *UnitDates          `xml:"unitdates,omitempty" json:"unit_dates,omitempty"`
+	UnitDate           *UnitDate           `xml:"unitdate,omitempty" json:"unit_dates,omitempty"`
 	PhysDesc           *PhysDesc           `xml:"physdesc,omitempty" json:"phys_desc,omitempty"`
 	PhysDescSet        *PhysDescSet        `xml:"physdescset,omitempty" json:"phys_desc_set,omitempty"`
 	UnitID             *UnitID             `xml:"unitid,omitempty" json:"unit_id,omitempty"`
@@ -227,7 +274,7 @@ type CorpName struct {
 // Part describes the part of a corpus or other organization
 type Part struct {
 	XMLName   xml.Name `xml:"part" json:"-"`
-	LocalType string   `xml:"localtype,attr" json:"localtype"`
+	LocalType string   `xml:"localtype,attr,omitempty" json:"localtype,omitempty"`
 	Value     string   `xml:",chardata" json:"value"`
 }
 
@@ -242,7 +289,8 @@ type Origination struct {
 // Persname is a person's name(s)
 type Persname struct {
 	XMLName        xml.Name `xml:"persname" json:"-"`
-	Rules          string   `xml:"rules,attr" json:"rules"`
+	Source         string   `xml:"source,attr,omitempty" json:"source,omitempty"`
+	Rules          string   `xml:"rules,attr,omitempty" json:"rules,omitempty"`
 	EncodingAnalog string   `xml:"encodinganalog,attr,omitempty" json:"encoding_analog,omitempty"`
 	Part           []*Part  `xml:"part" json:"part"`
 }
@@ -250,7 +298,7 @@ type Persname struct {
 // Subject describes the subject of contents
 type Subject struct {
 	XMLName        xml.Name `xml:"subject" json:"-"`
-	Source         string   `xml:"source,attr" json:"source"`
+	Source         string   `xml:"source,attr,omitempty" json:"source,omitempty"`
 	EncodingAnalog string   `xml:"encodinganalog,attr,omitempty" json:"encoding_analog,omitempty"`
 	Part           []*Part  `xml:"part" json:"part"`
 }
@@ -275,14 +323,15 @@ type UnitTitle struct {
 type UnitDateStructured struct {
 	XMLName        xml.Name     `xml:"unitdatestructured" json"-"`
 	Label          string       `xml:"label,attr,omitempty" json:"label,omitempty"`
-	UnitDateType   string       `xml:"unitdatetype,attr" json:"unit_date_type"`
+	UnitDateType   string       `xml:"unitdatetype,attr,omitempty" json:"unit_date_type"`
 	EncodingAnalog string       `xml:"encodinganalog,attr,omitempty" json:"encoding_analog,omitempty"`
-	DateRange      []*DateRange `xml:"daterange" json:"daterange"`
+	DateSingle     string       `xml:"datesingle,omitempty" json:"datesingle,omitempty"`
+	DateRange      []*DateRange `xml:"daterange,omitempty" json:"daterange,omitempty"`
 }
 
-// UnitDates provides a simpler date structure relating to content
-type UnitDates struct {
-	XMLName xml.Name `xml:"unitdates" json:"-"`
+// UnitDate provides a simpler date structure relating to content
+type UnitDate struct {
+	XMLName xml.Name `xml:"unitdate" json:"-"`
 	Label   string   `xml:"label,attr,omitempty" json:"label,omitempty"`
 	Value   string   `xml:",chardata" json:"value"`
 }
@@ -297,7 +346,7 @@ type DateRange struct {
 // PhysDesc contains the physical description of contents
 type PhysDesc struct {
 	XMLName xml.Name `xml:"physdesc" json:"-"`
-	Label   string   `xml:"label,attr" json:"label"`
+	Label   string   `xml:"label,attr,omitempty" json:"label,omitempty"`
 	Value   string   `xml:",chardata" json:"value"`
 }
 
@@ -417,37 +466,42 @@ type ControlAccess struct {
 
 // RelatedMaterial provides links out to related material
 type RelatedMaterial struct {
-	XMLName xml.Name `xml:"relatedmaterial" json:"-"`
-	Head    string   `xml:"head,omitempty" json:"head,omitempty"`
-	P       []*P     `xml:"p,omitempty" json:"p,omitempty"`
+	XMLName        xml.Name `xml:"relatedmaterial" json:"-"`
+	EncodingAnalog string   `xml:"encodinganalog,attr,omitempty" json:"encoding_analog,omitempty"`
+	Head           string   `xml:"head,omitempty" json:"head,omitempty"`
+	P              []*P     `xml:"p,omitempty" json:"p,omitempty"`
 }
 
 // AccessRestrict describes the containstraints under which items can be accessed
 type AccessRestrict struct {
-	XMLName xml.Name `xml:"accessrestrict" json:"-"`
-	Head    string   `xml:"head,omitempty" json:"head,omitempty"`
-	P       []*P     `xml:"p,omitempty" json:"p,omitempty"`
+	XMLName        xml.Name `xml:"accessrestrict" json:"-"`
+	EncodingAnalog string   `xml:"encodinganalog,attr,omitempty" json:"encoding_analog,omitempty"`
+	Head           string   `xml:"head,omitempty" json:"head,omitempty"`
+	P              []*P     `xml:"p,omitempty" json:"p,omitempty"`
 }
 
 // UseRestrict describe use restrictions that access to an item allows
 type UseRestrict struct {
-	XMLName xml.Name `xml:"userestrict" json:"-"`
-	Head    string   `xml:"head,omitempty" json:"head,omitempty"`
-	P       []*P     `xml:"p,omitempty" json:"p,omitempty"`
+	XMLName        xml.Name `xml:"userestrict" json:"-"`
+	EncodingAnalog string   `xml:"encodinganalog,attr,omitempty" json:"encoding_analog,omitempty"`
+	Head           string   `xml:"head,omitempty" json:"head,omitempty"`
+	P              []*P     `xml:"p,omitempty" json:"p,omitempty"`
 }
 
 // AcqInfo provides information about acquisition of an item
 type AcqInfo struct {
-	XMLName xml.Name `xml:"acqinfo" json:"-"`
-	Head    string   `xml:"head,omitempty" json:"head,omitempty"`
-	P       []*P     `xml:"p,omitempty" json:"p,omitempty"`
+	XMLName        xml.Name `xml:"acqinfo" json:"-"`
+	EncodingAnalog string   `xml:"encodinganalog,attr,omitempty" json:"encoding_analog,omitempty"`
+	Head           string   `xml:"head,omitempty" json:"head,omitempty"`
+	P              []*P     `xml:"p,omitempty" json:"p,omitempty"`
 }
 
 // ProcessInfo proccessing information
 type ProcessInfo struct {
-	XMLName xml.Name `xml:"processinfo" json:"-"`
-	Head    string   `xml:"head,omitempty" json:"head,omitempty"`
-	P       []*P     `xml:"p,omitempty" json:"p,omitempty"`
+	XMLName        xml.Name `xml:"processinfo" json:"-"`
+	EncodingAnalog string   `xml:"encodinganalog,attr,omitempty" json:"encoding_analog,omitempty"`
+	Head           string   `xml:"head,omitempty" json:"head,omitempty"`
+	P              []*P     `xml:"p,omitempty" json:"p,omitempty"`
 }
 
 // AltFormAvail describes other forms of access for an item
@@ -596,4 +650,10 @@ type C04 struct {
 	PhysTech       *PhysTech       `xml:"phystech,omitempty" json:"phys_tech,omitempty"`
 	DIDNote        *DIDNote        `xml:"didnote,omitempty" json:"did_note,omitempty"`
 	Container      []*Container    `xml:"container,omitempty" json:"container,omitempty"`
+}
+
+func New() *EAD3 {
+	obj := new(EAD3)
+	obj.XMLNameSpace = "http://ead3.archivists.org/schema/undeprecated/"
+	return obj
 }
