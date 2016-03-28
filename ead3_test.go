@@ -98,14 +98,22 @@ var (
 )
 
 func expandElements(val []byte) []byte {
-	var results []string
+	var (
+		results []string
+		elName  string
+	)
 	cnt := bytes.Count(val, []byte("/>"))
 	data := bytes.Split(val, []byte("/>"))
 	for _, p := range data {
 		if cnt > 0 {
 			start := bytes.LastIndex(p, []byte("<")) + 1
 			end := bytes.Index(p[start:], []byte(" ")) + start
-			elName := fmt.Sprintf("%s", p[start:end])
+			if end > start {
+				elName = fmt.Sprintf("%s", p[start:end])
+			} else {
+				//log.Printf("DEBUG epandElements(%q) start: %d, end %d\n", p, start, end)
+				elName = fmt.Sprintf("%s", p[1:])
+			}
 			results = append(results, fmt.Sprintf("%s></%s>", p, elName))
 			cnt--
 		} else {
@@ -117,13 +125,16 @@ func expandElements(val []byte) []byte {
 
 func targetPhrase(no int, line []byte) ([]byte, bool) {
 	val := bytes.TrimSpace(line[:])
+	if bytes.Contains(val, []byte("<?xml")) == true {
+		return []byte(""), false
+	}
 	if bytes.HasPrefix(val, []byte("<!-- ")) == true {
 		return []byte(""), false
 	}
 	if bytes.Count(val, []byte("/>")) > 0 {
 		return expandElements(val), true
 	}
-	return val, true
+	return bytes.TrimSpace(val), (bytes.Contains(val, []byte("<")) && bytes.Contains(val, []byte(">")))
 }
 
 func errorOnNil(t *testing.T, val interface{}, msg string) {
@@ -141,20 +152,28 @@ func errorOnNotNil(t *testing.T, val interface{}, msg string) {
 }
 
 func anyMatch(src, val []byte) string {
-	txt := fmt.Sprintf("%s", bytes.Replace(src, []byte("\n"), []byte(""), -1))
+	txt := fmt.Sprintf("%s", bytes.Replace(src, []byte("\n"), []byte(" "), -1))
 	for s := fmt.Sprintf("%s", val); s != ""; {
 		if strings.Contains(txt, s) == true {
-			return fmt.Sprintf("limited match to %s", s)
+			return s
 		}
 		s = s[:len(s)-1]
 	}
-	return fmt.Sprintf("not overlap of %s <- %s", src, val)
+	return ""
 }
 
 func contains(t *testing.T, src, val []byte, msg string) error {
-	//_, _, line, _ := runtime.Caller(1)
-	if bytes.Index(src, val) < 0 {
-		return fmt.Errorf("expected %s: %s\n", val, anyMatch(src, val))
+	if bytes.Contains(src, val) == false {
+		m := anyMatch(src, val)
+		if strings.Compare(m, string(val)) == 0 {
+			return nil
+		}
+		ioutil.WriteFile("debug.xml", src, 0664)
+		return fmt.Errorf(`
+expected:
+%s
+   found:
+%s`, val, anyMatch(src, val))
 	}
 	return nil
 }
@@ -163,7 +182,7 @@ func normalize(src []byte) []byte {
 	// NOTE: cut comments out
 	openComment := "<!-- "
 	closeComment := " -->"
-	buf := strings.Replace(string(src), "\n", "", -1)
+	buf := strings.Replace(string(src), "\n", " ", -1)
 	for strings.Index(buf, openComment) >= 0 {
 		first := ""
 		rest := ""
@@ -203,7 +222,7 @@ func XMLDecodeEncodeTest(t *testing.T, fname string) {
 	log.Printf("Scanning %d lines in %s\n", bytes.Count(expectedData, []byte("\n")), fname)
 	for no, line := range bytes.Split(expectedData, []byte("\n")) {
 		if val, ok := targetPhrase(no, line[:]); ok == true {
-			err := contains(t, doc, val, fmt.Sprintf("around line %d of %s", no, fname))
+			err = contains(t, doc, val, fmt.Sprintf("around line %d of `%s`", no, fname))
 			if err != nil {
 				out := bytes.Split(outputData, []byte("\n"))
 				for i, j := (no - 10), (no + 25); i <= j && i < len(out); i++ {
