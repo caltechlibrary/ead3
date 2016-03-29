@@ -662,7 +662,7 @@ type LangMaterial struct {
 // DescriptiveNote is a descriptive note about the content
 type DescriptiveNote struct {
 	XMLName xml.Name `xml:"descriptivenote" json:"-"`
-	P       []*P     `xml:"p" json:"p"`
+	P       []*P     `xml:"p" json:"p,omitempty"`
 	Title   string   `xml:"title,omitempty" json:"title,omitempty"`
 }
 

@@ -284,8 +284,7 @@
 		  </c02> 
 		  <c02 level="file"> 
 			 <did> 
-				<unittitle>Wheat breeding program histories written by John Gibler,
-				  </unittitle> 
+				<unittitle>Wheat breeding program histories written by John Gibler</unittitle> 
 				<unitdate unitdatetype="inclusive">1996. </unitdate> 
 				<container localtype="box">1</container> 
 				<container localtype="folder">25</container> 
@@ -1945,42 +1944,42 @@
 					 <p>View folder 7 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104986"> 
+				<dao href="http://purl.umn.edu/104986" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 8 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104987"> 
+				<dao href="http://purl.umn.edu/104987" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 9 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104988"> 
+				<dao href="http://purl.umn.edu/104988" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 10 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104989"> 
+				<dao href="http://purl.umn.edu/104989" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 11 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104990"> 
+				<dao href="http://purl.umn.edu/104990" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 12 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104991"> 
+				<dao href="http://purl.umn.edu/104991" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 13 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104992"> 
+				<dao href="http://purl.umn.edu/104992" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 14 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104993"> 
+				<dao href="http://purl.umn.edu/104993" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 15 contents.</p> 
 				  </descriptivenote> 
@@ -2003,7 +2002,7 @@
 				<unitdate unitdatetype="inclusive">circa 1960s.</unitdate> 
 				<container localtype="box">1</container> 
 				<container localtype="folder">16</container> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104994"> 
+				<dao href="http://purl.umn.edu/104994" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents.</p> 
 				  </descriptivenote> 
@@ -2017,12 +2016,12 @@
 				<unitdate unitdatetype="inclusive">circa 1970s.</unitdate> 
 				<container localtype="box">1</container> 
 				<container localtype="folder">17-18</container> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104995"> 
+				<dao href="http://purl.umn.edu/104995" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 17 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104996"> 
+				<dao href="http://purl.umn.edu/104996" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 18 contents.</p> 
 				  </descriptivenote> 
@@ -2035,22 +2034,22 @@
 				<unitdate unitdatetype="inclusive">1980s. </unitdate> 
 				<container localtype="box">1</container> 
 				<container localtype="folder">19-22</container> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104997"> 
+				<dao href="http://purl.umn.edu/104997" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 19 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104998"> 
+				<dao href="http://purl.umn.edu/104998" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 20 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/104999"> 
+				<dao href="http://purl.umn.edu/104999" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 21 contents.</p> 
 				  </descriptivenote> 
 				</dao> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/105000"> 
+				<dao href="http://purl.umn.edu/105000" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder 22 contents.</p> 
 				  </descriptivenote> 
@@ -2063,7 +2062,7 @@
 				<unitdate unitdatetype="inclusive">circa 1946-2006. </unitdate> 
 				<container localtype="box">1</container> 
 				<container localtype="folder">23</container> 
-				<dao daotype="derived" show="replace" actuate="onrequest" href="http://purl.umn.edu/105001"> 
+				<dao href="http://purl.umn.edu/105001" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents.</p> 
 				  </descriptivenote> 
