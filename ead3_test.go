@@ -175,7 +175,7 @@ func contains(t *testing.T, src, val []byte, msg string) error {
 		if strings.Compare(m, string(val)) == 0 {
 			return nil
 		}
-		ioutil.WriteFile("debug.xml", src, 0664)
+		//ioutil.WriteFile("debug.xml", src, 0664)
 		return fmt.Errorf(`
 expected:
 %s
