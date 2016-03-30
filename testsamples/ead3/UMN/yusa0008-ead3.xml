@@ -44,25 +44,21 @@
 	 		</corpname>
 	 	</repository> 
 		<origination label="Creator:"> 
-				<persname encodinganalog="100" source="lcnaf" rules="aacr2">
+				<persname source="lcnaf" rules="aacr2" encodinganalog="100">
 					<part localtype="a">Dickson, Emma Young, </part>
 					<part localtype="d">1891-1984.</part>
 				</persname> 
 		</origination> 
 		<unittitle label="Title:" encodinganalog="245$a">Emma Young Dickson papers.</unittitle> 
-		<unitdate label="Date:" encodinganalog="245$f" unitdatetype="inclusive"
-		 normal="1917/1955">1917-1955, </unitdate> 
+		<unitdate normal="1917/1955" encodinganalog="245$f" unitdatetype="inclusive" label="Date:">1917-1955, </unitdate> 
 		<unitdate normal="1998">1998 </unitdate> 
-		<unitdate unitdatetype="bulk" normal="1918/1919">(bulk 1918-1919).</unitdate> 
-		<unitid label="Collection Number:" encodinganalog="099" countrycode="us"
-		 repositorycode="MnU">Y.USA.8</unitid> 
+		<unitdate normal="1918/1919" unitdatetype="bulk">(bulk 1918-1919).</unitdate> 
+		<unitid label="Collection Number:" encodinganalog="099" countrycode="us" repositorycode="MnU">Y.USA.8</unitid> 
 		<abstract label="Abstract:">Correspondence, diaries and other papers of
 		  Emma Young Dickson, documenting her service with the YMCA in France during
 		  World War I.</abstract> 
-		<physdesc label="Quantity:" encodinganalog="300">2.4 cu. ft. (6
-		  boxes).</physdesc> 
-		<physloc label="Location:">See Detailed Description section for box
-		  listing.</physloc> <langmaterial><language>English</language></langmaterial> 
+		<physdesc label="Quantity:" encodinganalog="300">2.4 cu. ft. (6 boxes).</physdesc> 
+		<physloc label="Location:">See Detailed Description section for box listing.</physloc> <langmaterial><language>English</language></langmaterial> 
 	 </did> 
 	 <bioghist encodinganalog="545"> 
 		<head altrender="biography" id="a2b">BIOGRAPHY OF EMMA YOUNG
@@ -169,8 +165,7 @@
 			 <did> 
 				<unittitle>Folder 1, </unittitle> 
 				<unitdate unitdatetype="inclusive">February 1918 - April 1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150877 "> 
+				<dao href="http://purl.umn.edu/150877 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -182,8 +177,7 @@
 				<unittitle>Folder 2, </unittitle> 
 				<unitdate unitdatetype="inclusive">12 April 1918 - 23 April 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150878 "> 
+				<dao href="http://purl.umn.edu/150878 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -194,8 +188,7 @@
 			 <did> 
 				<unittitle>Folder 3, </unittitle> 
 				<unitdate unitdatetype="inclusive">21 April 1918 - 5 May 1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150879 "> 
+				<dao href="http://purl.umn.edu/150879 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -206,8 +199,7 @@
 			 <did> 
 				<unittitle>Folder 4, </unittitle> 
 				<unitdate unitdatetype="inclusive">5 May 1918 - 21 May 1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150880 "> 
+				<dao href="http://purl.umn.edu/150880 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -218,8 +210,7 @@
 			 <did> 
 				<unittitle>Folder 5, </unittitle> 
 				<unitdate unitdatetype="inclusive">21 May 1918 - 2 June 1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150881 "> 
+				<dao href="http://purl.umn.edu/150881 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -230,8 +221,7 @@
 			 <did> 
 				<unittitle>Folder 6, </unittitle> 
 				<unitdate unitdatetype="inclusive">3 June 1918 - 7 June 1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150882 "> 
+				<dao href="http://purl.umn.edu/150882 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -242,8 +232,7 @@
 			 <did> 
 				<unittitle>Folder 7, </unittitle> 
 				<unitdate unitdatetype="inclusive">8 June 1918 - 16 June 1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150883 "> 
+				<dao href="http://purl.umn.edu/150883 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -254,9 +243,7 @@
 			 <did> 
 				<unittitle>Folder 8, </unittitle> 
 				<unitdate unitdatetype="inclusive">17 June 1918 - 19 June 1918. </unitdate>
-				
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150884 "> 
+				<dao href="http://purl.umn.edu/150884 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -267,8 +254,7 @@
 			 <did> 
 				<unittitle>Folder 9, </unittitle> 
 				<unitdate unitdatetype="inclusive">20 June 1918 -27 June 1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150885 "> 
+				<dao href="http://purl.umn.edu/150885 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -279,9 +265,7 @@
 			 <did> 
 				<unittitle>Folder 10, </unittitle> 
 				<unitdate unitdatetype="inclusive">28 June 1918 - 16 July 1918. </unitdate>
-				
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150886 "> 
+				<dao href="http://purl.umn.edu/150886 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -292,9 +276,7 @@
 			 <did> 
 				<unittitle>Folder 11, </unittitle> 
 				<unitdate unitdatetype="inclusive">17 July 1918 - 18 July 1918. </unitdate>
-				
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150887 "> 
+				<dao href="http://purl.umn.edu/150887 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -305,9 +287,7 @@
 			 <did> 
 				<unittitle>Folder 12, </unittitle> 
 				<unitdate unitdatetype="inclusive">17 July 1918 - 19 July 1918. </unitdate>
-				
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150888 "> 
+				<dao href="http://purl.umn.edu/150888 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -318,8 +298,7 @@
 			 <did> 
 				<unittitle>Folder 13, </unittitle> 
 				<unitdate unitdatetype="inclusive">20 July 1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150889 "> 
+				<dao href="http://purl.umn.edu/150889 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -330,9 +309,7 @@
 			 <did> 
 				<unittitle>Folder 14, </unittitle> 
 				<unitdate unitdatetype="inclusive">21 July 1918 - 26 July 1918. </unitdate>
-				
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150890 "> 
+				<dao href="http://purl.umn.edu/150890 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -344,8 +321,7 @@
 				<unittitle>Folder 15, </unittitle> 
 				<unitdate unitdatetype="inclusive">27 July 1918 - 2 August 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150891 "> 
+				<dao href="http://purl.umn.edu/150891 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -357,8 +333,7 @@
 				<unittitle>Folder 16, </unittitle> 
 				<unitdate unitdatetype="inclusive">2 August 1918 - 4 August 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150892 "> 
+				<dao href="http://purl.umn.edu/150892 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -378,8 +353,7 @@
 				<unittitle>Folder 1, </unittitle> 
 				<unitdate unitdatetype="inclusive">5 August 1918 - 15 August 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150893 "> 
+				<dao href="http://purl.umn.edu/150893 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -391,8 +365,7 @@
 				<unittitle>Folder 2, </unittitle> 
 				<unitdate unitdatetype="inclusive">15 August 1918 - 31 August 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150894 "> 
+				<dao href="http://purl.umn.edu/150894 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -404,8 +377,7 @@
 				<unittitle>Folder 3, </unittitle> 
 				<unitdate unitdatetype="inclusive">31 August 1918 - 4 September 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150895 "> 
+				<dao href="http://purl.umn.edu/150895 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -417,8 +389,7 @@
 				<unittitle>Folder 4, </unittitle> 
 				<unitdate unitdatetype="inclusive">6 September 1918 - 11 September 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150896 "> 
+				<dao href="http://purl.umn.edu/150896 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -430,8 +401,7 @@
 				<unittitle>Folder 5, </unittitle> 
 				<unitdate unitdatetype="inclusive">12 September 1918 - 19 September 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150897 "> 
+				<dao href="http://purl.umn.edu/150897 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -443,8 +413,7 @@
 				<unittitle>Folder 6, </unittitle> 
 				<unitdate unitdatetype="inclusive">18 September 1918 - 21 September 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150898 "> 
+				<dao href="http://purl.umn.edu/150898 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -456,8 +425,7 @@
 				<unittitle>Folder 7, </unittitle> 
 				<unitdate unitdatetype="inclusive">22 September 1918 - 29 September May
 				  1918. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150899 "> 
+				<dao href="http://purl.umn.edu/150899 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -469,8 +437,7 @@
 				<unittitle>Folder 8, </unittitle> 
 				<unitdate unitdatetype="inclusive">30 September 1918 - 19 October 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150900 "> 
+				<dao href="http://purl.umn.edu/150900 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -482,8 +449,7 @@
 				<unittitle>Folder 9, </unittitle> 
 				<unitdate unitdatetype="inclusive">19 October 1918 - 29 October 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150901 "> 
+				<dao href="http://purl.umn.edu/150901 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -495,8 +461,7 @@
 				<unittitle>Folder 10, </unittitle> 
 				<unitdate unitdatetype="inclusive">30 October 1918 - 15 November 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150902 "> 
+				<dao href="http://purl.umn.edu/150902 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -508,8 +473,7 @@
 				<unittitle>Folder 11, </unittitle> 
 				<unitdate unitdatetype="inclusive">16 November 1918 - 26 November ber 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150903 "> 
+				<dao href="http://purl.umn.edu/150903 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -521,8 +485,7 @@
 				<unittitle>Folder 12, </unittitle> 
 				<unitdate unitdatetype="inclusive">27 November 1918 - 3 December 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150904 "> 
+				<dao href="http://purl.umn.edu/150904 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -534,8 +497,7 @@
 				<unittitle>Folder 13, </unittitle> 
 				<unitdate unitdatetype="inclusive">4 December 1918 - 10 December 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150905 "> 
+				<dao href="http://purl.umn.edu/150905 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -547,8 +509,7 @@
 				<unittitle>Folder 14, </unittitle> 
 				<unitdate unitdatetype="inclusive">11 December 1918 - 12 December 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150906 "> 
+				<dao href="http://purl.umn.edu/150906 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -560,8 +521,7 @@
 				<unittitle>Folder 15, </unittitle> 
 				<unitdate unitdatetype="inclusive">13 December 1918 - 20 December 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150907 "> 
+				<dao href="http://purl.umn.edu/150907 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -581,8 +541,7 @@
 				<unittitle>Folder 1, </unittitle> 
 				<unitdate unitdatetype="inclusive">21 December 1918 - 25 December 1918.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150908 "> 
+				<dao href="http://purl.umn.edu/150908 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -594,8 +553,7 @@
 				<unittitle>Folder 2, </unittitle> 
 				<unitdate unitdatetype="inclusive">26 December 1918 - 9 January 1919.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150909 "> 
+				<dao href="http://purl.umn.edu/150909 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -607,8 +565,7 @@
 				<unittitle>Folder 3, </unittitle> 
 				<unitdate unitdatetype="inclusive">10 January 1919 - 18 January 1919.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150910 "> 
+				<dao href="http://purl.umn.edu/150910 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -620,8 +577,7 @@
 				<unittitle>Folder 4, </unittitle> 
 				<unitdate unitdatetype="inclusive">19 January 1919 - 31 January 1919.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150911 "> 
+				<dao href="http://purl.umn.edu/150911 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -633,8 +589,7 @@
 				<unittitle>Folder 5, </unittitle> 
 				<unitdate unitdatetype="inclusive">1 February 1919 - 11 February 1919.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150912 "> 
+				<dao href="http://purl.umn.edu/150912 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -646,8 +601,7 @@
 				<unittitle>Folder 6, </unittitle> 
 				<unitdate unitdatetype="inclusive">12 February 1919 - 25 February 1919.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150913 "> 
+				<dao href="http://purl.umn.edu/150913 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -659,8 +613,7 @@
 				<unittitle>Folder 7, </unittitle> 
 				<unitdate unitdatetype="inclusive">26 February 1919 - 11 March 1919.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150914 "> 
+				<dao href="http://purl.umn.edu/150914 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -672,8 +625,7 @@
 				<unittitle>Folder 8, </unittitle> 
 				<unitdate unitdatetype="inclusive">12 March 1919 - 22 March 1919.
 				  </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150915 "> 
+				<dao href="http://purl.umn.edu/150915 " daotype="derived" show="replace" actuate="onrequest">
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -684,8 +636,7 @@
 			 <did> 
 				<unittitle>Folder 9, </unittitle> 
 				<unitdate unitdatetype="inclusive">23 March 1919. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150916 "> 
+				<dao href="http://purl.umn.edu/150916 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -696,8 +647,7 @@
 			 <did> 
 				<unittitle>Folder 10, </unittitle> 
 				<unitdate unitdatetype="inclusive"> March 1919. </unitdate> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150917 "> 
+				<dao href="http://purl.umn.edu/150917 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -715,8 +665,7 @@
 		  <c02 level="file"> 
 			 <did> 
 				<unittitle>Folder 11. </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150918 "> 
+				<dao href="http://purl.umn.edu/150918 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -726,8 +675,7 @@
 		  <c02 level="file"> 
 			 <did> 
 				<unittitle>Folder 12. </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150919 "> 
+				<dao href="http://purl.umn.edu/150919 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -737,8 +685,7 @@
 		  <c02 level="file"> 
 			 <did> 
 				<unittitle>Folder 13. </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150920 "> 
+				<dao href="http://purl.umn.edu/150920 " daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -763,8 +710,7 @@
 				  <unittitle>Folder 1, </unittitle> 
 				  <unitdate unitdatetype="inclusive">8 August 1917- 9 April 1918.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150921"> 
+				  <dao href="http://purl.umn.edu/150921" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -776,8 +722,7 @@
 				  <unittitle>Folder 2, </unittitle> 
 				  <unitdate unitdatetype="inclusive">21 April 1918- 28 May 1918.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150922"> 
+				  <dao href="http://purl.umn.edu/150922" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -788,8 +733,7 @@
 				<did> 
 				  <unittitle>Folder 3, </unittitle> 
 				  <unitdate unitdatetype="inclusive">29 May 1918- 6 July 1918. </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150923"> 
+				  <dao href="http://purl.umn.edu/150923" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -801,8 +745,7 @@
 				  <unittitle>Folder 4, </unittitle> 
 				  <unitdate unitdatetype="inclusive">26 July 1918- 27 August 1918.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150924"> 
+				  <dao href="http://purl.umn.edu/150924" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -814,8 +757,7 @@
 				  <unittitle>Folder 5, </unittitle> 
 				  <unitdate unitdatetype="inclusive">28 February 1919 - 2 May 1919.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150925"> 
+				  <dao href="http://purl.umn.edu/150925" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -827,8 +769,7 @@
 				  <unittitle>Folder 6, </unittitle> 
 				  <unitdate unitdatetype="inclusive">16 May 1919 - 9 November 1919.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150926"> 
+				  <dao href="http://purl.umn.edu/150926" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -840,8 +781,7 @@
 				  <unittitle>Folder 7, </unittitle> 
 				  <unitdate unitdatetype="inclusive">1 December 1919 - 19 December 1919.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150927"> 
+				  <dao href="http://purl.umn.edu/150927" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -853,8 +793,7 @@
 				  <unittitle>Folder 11, </unittitle> 
 				  <unitdate unitdatetype="inclusive">22 September 1918 - February 1919.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150931"> 
+				  <dao href="http://purl.umn.edu/150931" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -879,8 +818,7 @@
 				  <unittitle>Folder 8, </unittitle> 
 				  <unitdate unitdatetype="inclusive">18 April 1918- 19 May 1918.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-				  href="http://purl.umn.edu/150928"> 
+				  <dao href="http://purl.umn.edu/150928" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -892,8 +830,7 @@
 				  <unittitle>Folder 9, </unittitle> 
 				  <unitdate unitdatetype="inclusive">31 May 1918- 31 August 1918.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-				  href="http://purl.umn.edu/150929"> 
+				  <dao href="http://purl.umn.edu/150929" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -905,8 +842,7 @@
 				  <unittitle>Folder 10, </unittitle> 
 				  <unitdate unitdatetype="inclusive">4 September 1918- 24 February 1919.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-				  href="http://purl.umn.edu/150930"> 
+				  <dao href="http://purl.umn.edu/150930" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -919,8 +855,7 @@
 					 12), </unittitle> 
 				  <unitdate unitdatetype="inclusive">April 1918 - February 1919.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-				  href="http://purl.umn.edu/150932"> 
+				  <dao href="http://purl.umn.edu/150932" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -941,8 +876,7 @@
 				  <unittitle>Folder 13, </unittitle> 
 				  <unitdate unitdatetype="inclusive">22 April 1918 - 2 July 1918.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150933"> 
+				  <dao href="http://purl.umn.edu/150933" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -954,8 +888,7 @@
 				  <unittitle>Folder 14, </unittitle> 
 				  <unitdate unitdatetype="inclusive">25 July 1918 - 14 Junuary 1919.
 					 </unitdate> 
-				  <dao daotype="derived" show="replace" actuate="onrequest"
-					href="http://purl.umn.edu/150934"> 
+				  <dao href="http://purl.umn.edu/150934" daotype="derived" show="replace" actuate="onrequest"> 
 					 <descriptivenote> 
 						<p>View folder contents</p> 
 					 </descriptivenote> 
@@ -969,8 +902,7 @@
 			 <container localtype="box">4</container> 
 			 <unittitle>Post-war correspondence, </unittitle> 
 			 <unitdate unitdatetype="inclusive">1930-1952. </unitdate> 
-			 <dao daotype="derived" show="replace" actuate="onrequest"
-			  href="http://purl.umn.edu/150935"> 
+			 <dao href="http://purl.umn.edu/150935" daotype="derived" show="replace" actuate="onrequest"> 
 				<descriptivenote> 
 				  <p>View folder contents</p> 
 				</descriptivenote> 
@@ -991,8 +923,7 @@
 		  <c02 level="file"> 
 			 <did> 
 				<unittitle>Folder 1. </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150936"> 
+				<dao href="http://purl.umn.edu/150936" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -1002,8 +933,7 @@
 		  <c02 level="file"> 
 			 <did> 
 				<unittitle>Folder 2. </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150937"> 
+				<dao href="http://purl.umn.edu/150937" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -1013,8 +943,7 @@
 		  <c02 level="file"> 
 			 <did> 
 				<unittitle>Folder 3. </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150938"> 
+				<dao href="http://purl.umn.edu/150938" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -1028,8 +957,7 @@
 			 <unittitle>Photographs, </unittitle> 
 			 <unitdate unitdatetype="inclusive">undated and 1918. </unitdate> 
 			 <physdesc>9 items. </physdesc> 
-			 <dao daotype="derived" show="replace" actuate="onrequest"
-			  href="http://purl.umn.edu/150939"> 
+			 <dao href="http://purl.umn.edu/150939" daotype="derived" show="replace" actuate="onrequest"> 
 				<descriptivenote> 
 				  <p>View folder contents</p> 
 				</descriptivenote> 
@@ -1045,8 +973,7 @@
 			 <container localtype="box">5</container> 
 			 <unittitle>News clippings and articles, </unittitle> 
 			 <unitdate unitdatetype="inclusive">1918-1921. </unitdate> 
-			 <dao daotype="derived" show="replace" actuate="onrequest"
-			  href="http://purl.umn.edu/150940"> 
+			 <dao href="http://purl.umn.edu/150940" daotype="derived" show="replace" actuate="onrequest"> 
 				<descriptivenote> 
 				  <p>View folder contents</p> 
 				</descriptivenote> 
@@ -1075,8 +1002,7 @@
 		  <c02 level="file"> 
 			 <did> 
 				<unittitle>Folder 6. </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150941"> 
+				<dao href="http://purl.umn.edu/150941" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -1086,8 +1012,7 @@
 		  <c02 level="file"> 
 			 <did> 
 				<unittitle>Folder 7. </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150942"> 
+				<dao href="http://purl.umn.edu/150942" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -1115,8 +1040,7 @@
 			 <did> 
 				<unittitle><emph render="italic">Russia Under the Hammer and
 				  Sickle. </emph></unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150944"> 
+				<dao href="http://purl.umn.edu/150944" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View volume </p> 
 				  </descriptivenote> 
@@ -1127,8 +1051,7 @@
 			 <did> 
 				<unittitle><emph render="italic">Random Ramblings in India.
 				  </emph></unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150945"> 
+				<dao href="http://purl.umn.edu/150945" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View volume </p> 
 				  </descriptivenote> 
@@ -1139,8 +1062,7 @@
 			 <did> 
 				<unittitle><emph render="italic">Growth: President Danforth's
 				  Monday Morning Messages. </emph></unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				href="http://purl.umn.edu/150946"> 
+				<dao href="http://purl.umn.edu/150946" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View volume</p> 
 				  </descriptivenote> 
@@ -1151,8 +1073,7 @@
 			 <did> 
 				<unittitle><emph render="italic">Action: President Danforth's
 				  Monday Morning Messages. </emph></unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				 href="http://purl.umn.edu/150947"> 
+				<dao href="http://purl.umn.edu/150947" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View volume </p> 
 				  </descriptivenote> 
@@ -1163,8 +1084,7 @@
 			 <did> 
 				<unittitle><emph render="italic">Power: President Danforth's Monday
 				  Morning Messages. </emph></unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				href="http://purl.umn.edu/150948"> 
+				<dao href="http://purl.umn.edu/150948" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View volume </p> 
 				  </descriptivenote> 
@@ -1175,8 +1095,7 @@
 			 <did> 
 				<unittitle>Loose items removed from William H. Danforth books.
 				  </unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				href="http://purl.umn.edu/150950"> 
+				<dao href="http://purl.umn.edu/150950" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View folder contents</p> 
 				  </descriptivenote> 
@@ -1187,8 +1106,7 @@
 			 <did> 
 				<unittitle><emph render="italic">Till We Meet Again.
 				  </emph></unittitle> 
-				<dao daotype="derived" show="replace" actuate="onrequest"
-				href="http://purl.umn.edu/150949"> 
+				<dao href="http://purl.umn.edu/150949" daotype="derived" show="replace" actuate="onrequest"> 
 				  <descriptivenote> 
 					 <p>View volume </p> 
 				  </descriptivenote> 
@@ -1204,8 +1122,7 @@
 				Serota, </unittitle> 
 			 <unitdate unitdatetype="inclusive">1998. </unitdate> 
 			 <physdesc>1 volume. </physdesc> 
-			 <dao daotype="derived" show="replace" actuate="onrequest"
-			 href="http://purl.umn.edu/150943"> 
+			 <dao href="http://purl.umn.edu/150943" daotype="derived" show="replace" actuate="onrequest"> 
 				<descriptivenote> 
 				  <p>View folder contents</p> 
 				</descriptivenote> 

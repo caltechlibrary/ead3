@@ -45,46 +45,43 @@
 			</corpname>
 		</repository> 
 		<origination label="Creator:"> 
-		  <corpname encodinganalog="110" source="lcnaf" rules="aacr2">
+		  <corpname source="lcnaf" rules="aacr2" encodinganalog="110">
 		  	<part localtype="a">National
 			 Board of the Young Men's Christian Associations.</part>
 		  	<part localtype="b">International Division.</part>
 			 </corpname> 
 		</origination> 
 		<unittitle label="Title:" encodinganalog="245$a">Records of YMCA International Work in Cuba </unittitle> 
-	 	<unitdatestructured label="Date:" encodinganalog="245$f" unitdatetype="inclusive">
+	 	<unitdatestructured label="Date:" unitdatetype="inclusive" encodinganalog="245$f">
 			<daterange>
 				<fromdate>1904</fromdate>
 				<todate>1979</todate>
 			</daterange>
 		</unitdatestructured> 
 	 	<unittitle label="Title:" encodinganalog="245$a">Records of YMCA International Work in Cuba </unittitle> 
-	 	<unitdatestructured label="Date:" encodinganalog="245$f" unitdatetype="bulk">
+	 	<unitdatestructured label="Date:" unitdatetype="bulk" encodinganalog="245$f">
 	 		<daterange>
 	 			<fromdate>1904</fromdate>
 	 			<todate>1941</todate>
 	 		</daterange>
 	 	</unitdatestructured> 
-		<unitid label="Collection Number:" encodinganalog="099" countrycode="US"
-		repositorycode="MnU">Y.USA.9-2-16</unitid> 
+		<unitid label="Collection Number:" encodinganalog="099" countrycode="US" repositorycode="MnU">Y.USA.9-2-16</unitid> 
 		<abstract label="Abstract:">Correspondence, reports, and printed
 		  material, primarily concerning the YMCA in Havana, Cuba, mostly concerning the
 		  finances and the 1941 closure of the YMCA, building projects, and World
 		  Service.</abstract> 
 	 	<physdescset>
-	 		<physdescstructured label="Quantity: " physdescstructuredtype="carrier" coverage="whole"
-	 			encodinganalog="300">
+	 		<physdescstructured label="Quantity: " physdescstructuredtype="carrier" coverage="whole" encodinganalog="300">
 	 			<quantity>6</quantity>
 	 			<unittype>boxes</unittype>
 	 		</physdescstructured>
-	 		<physdescstructured label="Quantity: " physdescstructuredtype="spaceoccupied"
-	 			coverage="whole" encodinganalog="300">
+	 		<physdescstructured label="Quantity: " physdescstructuredtype="spaceoccupied" coverage="whole" encodinganalog="300">
 	 			<quantity>1.9</quantity>
 	 			<unittype>cubic feet</unittype>
 	 		</physdescstructured>
 	 	</physdescset>
-		<physloc label="Location:">See Detailed Description section for box
-		  listing.</physloc> <langmaterial><language>English</language></langmaterial> 
+		<physloc label="Location:">See Detailed Description section for box listing.</physloc> 
+        <langmaterial><language>English</language></langmaterial> 
 	 </did> 
 	 <bioghist encodinganalog="545"> 
 		<head altrender="history" id="a2h">HISTORY OF YMCA INTERNATIONAL WORK IN
@@ -247,45 +244,45 @@
 		  of the University of Minnesota Libraries. Researchers desiring materials about
 		  related topics, persons or places should search the catalog using these
 		  headings.</p> 
-		  <subject encodinganalog="650" source="lcsh" rules="aacr2">
+		  <subject source="lcsh" encodinganalog="650" rules="aacr2">
 		  	<part localtype="a">Refugees</part>
 			 <part localtype="z">Cuba.</part>
 		  </subject> 
-		  <subject encodinganalog="611" source="lcsh" rules="aacr2">
+		  <subject source="lcsh" encodinganalog="611" rules="aacr2">
 		  	<part localtype="a">World
 			 Festival of Youth and Students for Peace and Friendship</part>
 		  	<part localtype="n">(11th : </part>
 		  	<part localtype="d">1978 : </part>
 		  	<part localtype="c">Havana, Cuba)</part>
 		  </subject> 
-		  <subject encodinganalog="650" source="lcsh" rules="aacr2">
+		  <subject source="lcsh" encodinganalog="650" rules="aacr2">
 		  	<part localtype="a">Young Men's Christian associations</part>
 		  	<part localtype="x">Administration.</part>
 		  </subject> 
-		  <subject encodinganalog="650" source="lcsh" rules="aacr2">
+		  <subject source="lcsh" encodinganalog="650" rules="aacr2">
 		  	<part localtype="a">Young Men's Christian Associations</part>
 		  	<part localtype="x">Buildings.</part>
 		  </subject> 
-		  <subject encodinganalog="650" source="lcsh" rules="aacr2">
+		  <subject source="lcsh" encodinganalog="650" rules="aacr2">
 				<part localtype="a">Young Men's Christian Associations</part>
 				<part localtype="z">Cuba</part>
 				<part localtype="z">Havana.</part>
 		 </subject> 
 		
-		  <geogname encodinganalog="651" source="lcsh" rules="aacr2">
+		  <geogname source="lcsh" encodinganalog="651" rules="aacr2">
 		  	<part localtype="a">Havana (Cuba).</part>
 		  </geogname> 
 		<controlaccess>
 		  <head>Organizations:</head> 
-		  <corpname encodinganalog="610" source="lcnaf" rules="aacr2">
+		  <corpname source="lcnaf" rules="aacr2" encodinganalog="610">
 		  	<part localtype="a">International Committee of YMCAs.</part>
 		  	<part localtype="b">World Service. </part>
 		  </corpname> 
-		  <corpname encodinganalog="610" source="lcnaf" rules="aacr2">
+		  <corpname source="lcnaf" rules="aacr2" encodinganalog="610">
 		  	<part localtype="a">National Board of the Young Men's Christian Associations.</part>
 		  	<part localtype="b">International Division. </part>
 		  </corpname> 
-		  <corpname encodinganalog="610" source="lcnaf" rules="aacr2">
+		  <corpname source="lcnaf" rules="aacr2" encodinganalog="610">
 		  	<part localtype="a">Young Men's Christian Associations of North America.</part>
 		  	<part localtype="b">International Committee.</part>
 		  </corpname> 

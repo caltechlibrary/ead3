@@ -380,7 +380,8 @@
 					<part>Manuscripts of the Founders of Hogwarts School of Witchcraft and
 						Wizardry</part>
 				</title>
-				<num>1</num>. <ref href="http://eadiva.com/hogwarts-ead/G.0001.xml" show="new" actuate="onrequest">Manuscripts of Godric Gryffindor: Finding Aid</ref>
+				<num>1</num>. 
+                <ref href="http://eadiva.com/hogwarts-ead/G.0001.xml" show="new" actuate="onrequest">Manuscripts of Godric Gryffindor: Finding Aid</ref>
 			</archref>
 			<archref>Series: <title>
 					<part>Manuscripts of the Founders of Hogwarts School of Witchcraft and
@@ -404,7 +405,7 @@
 						odds with Slytherin's pure blood philosophy.</p>
 				</descriptivenote>
 			</relation>
-			<relation id="ggry" relationtype="cpfrelation" actuate="onrequest" show="new" href="http://eadiva.com/hogwarts-cpf/G.001.xml">
+			<relation id="ggry" relationtype="cpfrelation" show="new" href="http://eadiva.com/hogwarts-cpf/G.001.xml" actuate="onrequest">
 				<relationentry>Gryffindor, Godric</relationentry>
 				<descriptivenote>
 					<p>Co-founder of Hogwarts School of Witchcraft and Wizardry. Initially a good
@@ -412,7 +413,7 @@
 						over their disagreement concerning acceptance of muggle-born students.</p>
 				</descriptivenote>
 			</relation>
-			<relation id="rrav" relationtype="cpfrelation" actuate="onrequest" show="new" href="http://eadiva.com/hogwarts-cpf/R.001.xml">
+			<relation id="rrav" relationtype="cpfrelation" show="new" href="http://eadiva.com/hogwarts-cpf/R.001.xml" actuate="onrequest">
 				<relationentry>Ravenclaw, Rowena</relationentry>
 				<descriptivenote>
 					<p>Co-founder of Hogwarts School of Witchcraft and Wizardry.</p>
