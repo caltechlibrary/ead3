@@ -460,7 +460,7 @@ type Persname struct {
 	Part           []*Part  `xml:"part" json:"part"`
 }
 
-// famname is a person's family name(s)
+// Famname is a person's family name(s)
 type Famname struct {
 	XMLName        xml.Name `xml:"famname" json:"-"`
 	Source         string   `xml:"source,attr,omitempty" json:"source,omitempty"`
